@@ -1,0 +1,117 @@
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: url("/public/bg.jpg");
+  font-family: "Montserrat", sans-serif;
+  background-size: cover;
+  background-position: center;
+}
+#forms {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin: auto;
+}
+#forms input[type="file"] {
+  display: none;
+}
+
+#forms button {
+  margin: auto;
+  align-self: flex-start;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: transparent;
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+#forms button:hover {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: #000000;
+  color: white;
+  transform: scale(1.2);
+  transition: all 300ms ease-in-out;
+}
+
+.title {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-bottom: 8rem;
+}
+.title h1 {
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 2rem;
+}
+.title p {
+  font-size: 1.5rem;
+  line-height: 1rem;
+}
+
+.labels {
+  font-weight: 600;
+}
+
+.upload-box {
+  border: 3px dashed rgb(0, 0, 0);
+  background-color: transparent;
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  text-align: center;
+}
+
+.upload-box:hover {
+  border: 3px solid rgb(255, 255, 255);
+  background-color: #000000;
+  color: white;
+  transform: scale(1.05);
+}
+
+.upload-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+  filter: invert(0);
+  transition: filter 300ms ease-in-out;
+}
+
+.upload-box:hover .upload-icon {
+  filter: invert(1);
+}
+
+.hint {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #444;
+  text-align: center;
+}
+
+.inputs {
+  background-color: #ffffff79;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px 10px 10px 10px;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+.inputs::placeholder {
+  color: rgba(0, 0, 0, 0.699);
+  font-weight: 500;
+}

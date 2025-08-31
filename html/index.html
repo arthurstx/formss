@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Conference ticket generator</title>
+  </head>
+  <body>
+    <section id="#sections">
+      <div class="title">
+        <h1>Welcome to the creator tickets</h1>
+        <p>
+          the small project, created only with the intention of gaining points
+        </p>
+      </div>
+
+      <form action="" id="forms">
+        <label for="file-upload" class="upload-box">
+          <div class="upload-content">
+            <img
+              src="https://www.svgrepo.com/show/9488/cloud-upload-signal.svg"
+              alt="Upload"
+              class="upload-icon"
+            />
+            <p>Arraste e solte ou clique para enviar</p>
+          </div>
+        </label>
+        <input id="file-upload" type="file" accept="image/*" />
+        <p class="hint">Upload sua foto (JPG ou PNG, máx: 500KB)</p>
+
+        <label class="labels" for="name">Full Name</label>
+        <input class="inputs" type="text" id="name" placeholder="John Doe" />
+        <label class="labels" for="email">Email Address</label>
+        <input
+          class="inputs"
+          type="text"
+          id="email"
+          placeholder="example@email.com"
+        />
+        <label class="labels" for="github">GitHub Username</label>
+        <input
+          class="inputs"
+          type="text"
+          id="github"
+          placeholder="@yourUsarname"
+        />
+
+        <button type="submit">Generete My Ticket</button>
+      </form>
+    </section>
+  </body>
+</html>
