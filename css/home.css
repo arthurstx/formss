@@ -8,7 +8,9 @@ body {
   font-family: "Montserrat", sans-serif;
   background-size: cover;
   background-position: center;
+  padding: 0px 8px 12px 0px;
 }
+
 #forms {
   display: flex;
   flex-direction: column;
@@ -31,14 +33,14 @@ body {
   display: inline-block;
   padding: 10px 40px;
   cursor: pointer;
+  transition: all 300ms ease-in-out;
 }
 
 #forms button:hover {
-  border: 2px solid rgb(255, 255, 255);
   background-color: #000000;
   color: white;
-  transform: scale(1.2);
-  transition: all 300ms ease-in-out;
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgb(0, 0, 0);
 }
 
 .title {
@@ -49,11 +51,42 @@ body {
 .title h1 {
   font-weight: 800;
   font-size: 3.5rem;
-  line-height: 2rem;
+  line-height: 6rem;
+  transition: font-size 0.4s ease;
 }
 .title p {
   font-size: 1.5rem;
-  line-height: 1rem;
+  line-height: 1.8rem;
+  transition: font-size 0.4s ease;
+}
+
+@media (max-width: 640px) {
+  .title {
+    margin-bottom: 2px;
+  }
+  .title h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1.6rem;
+  }
+  .title p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+@media (min-width: 641px) and (max-width: 768px) {
+  .title {
+    margin-bottom: 2px;
+  }
+  .title h1 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
+  .title p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
 }
 
 .labels {
@@ -111,6 +144,17 @@ body {
   color: rgb(0, 0, 0);
   margin-bottom: 20px;
 }
+.inputs-err,
+.inputs-err:focus {
+  border: 2px solid rgb(255, 0, 0);
+}
+#error-message {
+  color: red;
+  line-height: 0rem;
+  font-size: 0.65rem;
+  display: none;
+}
+
 .inputs::placeholder {
   color: rgba(0, 0, 0, 0.699);
   font-weight: 500;

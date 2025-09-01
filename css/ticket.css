@@ -1,0 +1,165 @@
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: url("/public/bg.jpg");
+  font-family: "Montserrat", sans-serif;
+  background-size: cover;
+  background-position: center;
+  padding: 0px 8px 12px 0px;
+}
+
+#ticket {
+  height: 50rem;
+}
+
+.ticket {
+  position: relative;
+  display: inline-block;
+}
+
+#info {
+  inset: 0;
+}
+
+.ticket-name {
+  display: flex;
+  line-height: 0px;
+  flex-direction: column;
+  position: absolute;
+  top: 10rem;
+  left: 1.5rem;
+  font-weight: 400;
+}
+.ticket-name p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000000;
+}
+.ticket-name h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #00000080;
+}
+.ticket-git {
+  display: flex;
+  line-height: 0px;
+  flex-direction: column;
+  position: absolute;
+  top: 15rem;
+  left: 1.5rem;
+  font-weight: 400;
+}
+.ticket-git p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000000;
+}
+.ticket-git h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #00000080;
+}
+
+.ticket-date {
+  display: flex;
+  line-height: 0px;
+  flex-direction: column;
+  position: absolute;
+  top: 21rem;
+  width: 100%;
+  left: 0px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+.ticket-date p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000000;
+}
+.ticket-date h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #00000080;
+}
+#ticket-photo {
+  position: absolute;
+  top: 15rem;
+  right: 1rem;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  object-fit: fill;
+  border: 3px solid #fff;
+}
+
+@media (max-width: 640px) {
+  #ticket {
+    height: 40rem;
+  }
+
+  .ticket-name {
+    display: flex;
+    line-height: 0px;
+    flex-direction: column;
+    position: absolute;
+    top: 8rem;
+    left: 1.5rem;
+    font-weight: 400;
+  }
+  .ticket-name p {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000000;
+  }
+  .ticket-name h1 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #00000080;
+  }
+  .ticket-git {
+    display: flex;
+    line-height: 0px;
+    flex-direction: column;
+    position: absolute;
+    top: 12rem;
+    left: 1.5rem;
+    font-weight: 400;
+  }
+  .ticket-git p {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000000;
+  }
+  .ticket-git h1 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #00000080;
+  }
+
+  .ticket-date {
+    display: flex;
+    line-height: 0px;
+    flex-direction: column;
+    position: absolute;
+    top: 17rem;
+    width: 100%;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+  }
+  .ticket-date p {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000000;
+  }
+  .ticket-date h1 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #00000080;
+  }
+}

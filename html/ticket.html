@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/ticket.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="/public/emoji.png" />
+
+    <title>Conference ticket generator</title>
+  </head>
+  <body>
+    <div class="ticket">
+      <img src="/public/ticket.png" alt="" id="ticket" />
+      <img id="ticket-photo" alt="Foto do usuário" />
+      <div id="info">
+        <span class="ticket-name">
+          <h1>Name:</h1>
+          <p id="ticket-name">Arthur Santos Teixeira</p>
+        </span>
+        <span class="ticket-git">
+          <h1>GitHub:</h1>
+          <p id="ticket-git">@arthurstx</p>
+        </span>
+        <span class="ticket-date">
+          <h1>Date:</h1>
+          <p id="ticket-date">10/20/2005</p>
+        </span>
+      </div>
+    </div>
+
+    <script>
+      const ticket = JSON.parse(localStorage.getItem("ticket"));
+
+      if (ticket) {
+        document.getElementById("ticket-name").textContent = ticket.name;
+        document.getElementById("ticket-git").textContent = ticket.gitHub;
+        document.getElementById("ticket-date").textContent = new Date(
+          ticket.created_at
+        ).toLocaleDateString();
+        const ticketPhoto = document.getElementById("ticket-photo");
+        ticketPhoto.src = ticket.image;
+      }
+    </script>
+  </body>
+</html>
