@@ -109,7 +109,7 @@ forms.onsubmit = (event) => {
     };
 
     localStorage.setItem("ticket", JSON.stringify(form));
-    window.location.href = "./html/ticket.html";
+    window.location.href = "html/ticket.html";
   }
 };
 
